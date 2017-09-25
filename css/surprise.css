@@ -1,4 +1,30 @@
+@font-face {
+    font-family: 'permanent_markerregular';
+    src: url('../fonts/PermanentMarker-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .cardboard {
   background: url('../img/cardboard.jpg') repeat;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.container {
+  margin-top: 25px;
+}
+h1 {
+  text-align:center;
+  -ms-transform: rotate(-4deg); /* IE 9 */
+    -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+    transform: rotate(-4deg);
+    background-color: #FEFEFE;
+    display:inline-block;
+    margin-top:1em;
+    margin-bottom:1.5em;
+    padding: 8px 30px;
+    margin-left: 3em;
+    font-family: "permanent_markerregular" !important;
+}
+h3 {
+  
 }
