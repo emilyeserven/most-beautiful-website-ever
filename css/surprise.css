@@ -3,8 +3,20 @@
     src: url('../fonts/PermanentMarker-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+@font-face {
+    font-family: 'desyrelregular';
+    src: url('../fonts/desyrel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'telegrama';
+    src: url('../fonts/telegrama_raw.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .cardboard {
   background: url('../img/cardboard.jpg') repeat;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -24,7 +36,64 @@ h1 {
     padding: 8px 30px;
     margin-left: 3em;
     font-family: "permanent_markerregular" !important;
+    position:relative;
+    z-index: 1;
+}
+
+h1:before, h1:after {
+  content: "";
+  height: 40px;
+  width: 20px;
+  background-color: #DFFCFC;
+  border: #A8EFEF 1px solid;
+  position:absolute;
+  z-index: 10;
+  opacity: 0.8;
+}
+h1:before {
+  left: -10px;
+}
+h1:after {
+  right: -10px;
 }
 h3 {
-  
+  font-family: "desyrelregular";
+  font-size: 2em;
+  -ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
+}
+.btn {
+  font-family: Helvetica;
+  display:block;
+  color: #fff;
+  background-color: #EE1313;
+  height: 2em;
+  width: 2em;
+  border-radius: 100px;
+  margin: 0 auto;
+  float:none;
+  font-size: 5em;
+}
+.btn, .btn:focus {
+  -moz-box-shadow: inset 5px 5px 5px rgba(255, 255, 255, .4), inset -5px -5px 5px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 5px 5px 5px rgba(255, 255, 255, .4), inset -5px -5px 5px rgba(0, 0, 0, .4);
+  box-shadow: inset 5px 5px 5px rgba(255, 255, 255, .4), inset -5px -5px 5px rgba(0, 0, 0, .4);
+}
+.btn:active{
+  -moz-box-shadow: inset -3px -3px 3px rgba(255, 255, 255, .4), inset 3px 3px 3px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset -3px -3px 3px rgba(255, 255, 255, .4), inset 3px 3px 3px rgba(0, 0, 0, .4);
+    box-shadow: inset -3px -3px 3px rgba(255, 255, 255, .4), inset 3px 3px 3px rgba(0, 0, 0, .4);
+}
+#result {
+  font-family: "telegrama";
+  background-color: #201F1F;
+  color: #EFEFEF;
+  display:block;
+  padding: 14px 16px 6px;
+  margin-right: 2em;
+}
+.extra {
+  font-size: 0.5em;
+  text-align:center;
 }
