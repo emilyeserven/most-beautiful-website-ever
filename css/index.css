@@ -1,0 +1,21 @@
+.hero {
+  background: url('../img/clichestartup.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  text-align: center;
+}
+
+.center-vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  font-weight: bold;
+  color: white;
+  text-shadow: black 0px 0px 3px;
+  margin-bottom: 40px;
+}
