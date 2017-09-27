@@ -55,4 +55,5 @@ multi20.onclick = function() {
 button.onclick = function() {
   count += (1 * multiplier);
   document.getElementById("result").innerHTML = "$" + count;
+  document.getElementById("coffee").innerHTML = count / 3.46;
 };
