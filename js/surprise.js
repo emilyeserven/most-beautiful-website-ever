@@ -16,7 +16,12 @@ function inactiveClass() {
   multi15.className = "inactive";
   multi20.className = "inactive";
 }
-
+function multiVal(num) {
+  multiplier = num;
+  inactiveClass();
+  var multiName = "multi" + num;
+  multiname.className = "active";
+}
 multi1.onclick = function() {
   multiplier = 1;
   inactiveClass();

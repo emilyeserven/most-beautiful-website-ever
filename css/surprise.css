@@ -100,9 +100,11 @@ h3 {
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
+  text-align:left;
 }
 .coffee-count {
   margin-top: 2em;
+  text-align:center;
 }
 .extra {
   font-size: 0.5em;
