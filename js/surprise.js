@@ -8,6 +8,10 @@ var button = document.getElementById('makedollarz'),
   count = 0,
   multiplier = 1;
 
+var bitcoin = $.get( "https://blockchain.info/tobtc", { currency: "USD", value: 100 } );
+
+console.log("Bitcoin is " + bitcoin + " for 100 USD.");
+
 function inactiveClass() {
   multi1.className = "inactive";
   multi2.className = "inactive";
