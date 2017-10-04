@@ -18,7 +18,7 @@ $(function()
                 alert("Done, with the following status: " + textStatus + ". Here is the response: " + data);
         });
 }); */
-var btcRate = $.ajax({type: "GET", url: "https://blockchain.info/tobtc?currency=USD&value=100", async: false}).responseText;
+var btcRate = $.ajax({type: "GET", url: "https://blockchain.info/tobtc?currency=USD&value=1", async: false}).responseText;
 /*var btcRate;
 $.get("https://blockchain.info/tobtc?currency=USD&value=100", function(text) {
   btcRate = text;
