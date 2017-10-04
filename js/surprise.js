@@ -80,3 +80,4 @@ button.onclick = function() {
   document.getElementById("coffee").innerHTML = count / 3.46;
   document.getElementById("btc").innerHTML = count * btcRate;
 };
+document.getElementById("btcRate").innerHTML = btcRate;
