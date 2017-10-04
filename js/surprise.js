@@ -8,9 +8,27 @@ var button = document.getElementById('makedollarz'),
   count = 0,
   multiplier = 1;
 
-var bitcoin = $.get( "https://blockchain.info/tobtc", { currency: "USD", value: 100 } );
+/* global $ */
+//var bitcoin = $.get( "https://blockchain.info/tobtc", { currency: "USD", value: 100 } );
+/*
+$(function()
+{
+        $.get("https://blockchain.info/tobtc?currency=USD&value=100", function(data, textStatus)
+        {
+                alert("Done, with the following status: " + textStatus + ". Here is the response: " + data);
+        });
+}); */
+var btcRate = $.ajax({type: "GET", url: "https://blockchain.info/tobtc?currency=USD&value=100", async: false}).responseText;
+/*var btcRate;
+$.get("https://blockchain.info/tobtc?currency=USD&value=100", function(text) {
+  btcRate = text;
+  return btcRate;
+});*/
 
-console.log("Bitcoin is " + bitcoin + " for 100 USD.");
+	
+//var btcRate = $.get('https://blockchain.info/tobtc', { currency: "USD", value: 100 }).responseText;
+			
+console.log(btcRate);
 
 function inactiveClass() {
   multi1.className = "inactive";
@@ -60,4 +78,5 @@ button.onclick = function() {
   count += (1 * multiplier);
   document.getElementById("result").innerHTML = "$" + count;
   document.getElementById("coffee").innerHTML = count / 3.46;
+  document.getElementById("btc").innerHTML = count * btcRate;
 };

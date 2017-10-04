@@ -86,7 +86,7 @@ h3 {
     -webkit-box-shadow: inset -3px -3px 3px rgba(255, 255, 255, .4), inset 3px 3px 3px rgba(0, 0, 0, .4);
     box-shadow: inset -3px -3px 3px rgba(255, 255, 255, .4), inset 3px 3px 3px rgba(0, 0, 0, .4);
 }
-#result, #coffee {
+#result, #coffee, #btc {
   font-family: "telegrama";
   background-color: #201F1F;
   color: #EFEFEF;
@@ -95,7 +95,7 @@ h3 {
   margin-right: 2em;
   border-radius: 5px;
 }
-#coffee {
+#coffee, #btc {
   width: 300px;
   display: inline-block;
   margin-left: 20px;
@@ -107,7 +107,7 @@ h3 {
   top: 25px;
 position: relative;
 }
-.coffee-count {
+.coffee-count, .btc-count {
   margin-top: 2em;
   text-align:center;
 }
